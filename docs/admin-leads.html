@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Leads Desk | FinReady</title>
+    <meta
+      name="description"
+      content="Lead management workspace with filters, search, pipeline signals, and export-ready data."
+    />
+    <link rel="canonical" href="https://finready.ai/admin-leads" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="about" data-admin-page="leads">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="admin-shell">
+        <div class="container">
+          <div class="admin-shell-head">
+            <div>
+              <span class="eyebrow">Lead Operations</span>
+              <h1>Leads Desk</h1>
+              <p>
+                Filter and review every inbound signal across demo, consultation, contact,
+                payroll, and recruitment workflows.
+              </p>
+            </div>
+            <div class="admin-inline-kpis">
+              <article>
+                <p>Total Leads</p>
+                <strong id="leadWorkbenchTotal">0</strong>
+              </article>
+              <article>
+                <p>Demo</p>
+                <strong id="leadWorkbenchDemo">0</strong>
+              </article>
+              <article>
+                <p>Contact</p>
+                <strong id="leadWorkbenchContact">0</strong>
+              </article>
+            </div>
+          </div>
+
+          <nav class="admin-workspace-nav" aria-label="Admin workspace">
+            <a class="admin-nav-link" href="/admin" data-admin-tab="overview">Overview</a>
+            <a class="admin-nav-link" href="/admin-leads" data-admin-tab="leads">Leads</a>
+            <a class="admin-nav-link" href="/admin-users" data-admin-tab="users">Users</a>
+            <a class="admin-nav-link" href="/admin-operations" data-admin-tab="operations">Operations</a>
+            <a class="admin-nav-link" href="/admin-analytics" data-admin-tab="analytics">Analytics</a>
+            <a class="admin-nav-link" href="/admin-courses" data-admin-tab="courses">Courses</a>
+            <a class="admin-nav-link" href="/admin-tools" data-admin-tab="tools">Tools</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section admin-section-tight">
+        <div class="container">
+          <div class="card admin-toolbar">
+            <input
+              id="adminLeadSearch"
+              type="search"
+              class="search-input"
+              placeholder="Search by email, company, page, or form"
+              aria-label="Search leads"
+            />
+            <select id="adminLeadFormFilter" aria-label="Filter by form">
+              <option value="all">All forms</option>
+              <option value="demo">Demo</option>
+              <option value="contact">Contact</option>
+              <option value="consultation">Consultation</option>
+              <option value="payroll">Payroll</option>
+              <option value="recruitment">Recruitment</option>
+            </select>
+            <select id="adminLeadRangeFilter" aria-label="Filter by date range">
+              <option value="all">All time</option>
+              <option value="7d">Last 7 days</option>
+              <option value="30d">Last 30 days</option>
+              <option value="90d">Last 90 days</option>
+            </select>
+            <button class="btn btn-outline" id="adminLeadExport" type="button">Export CSV</button>
+          </div>
+
+          <div class="admin-stat-strip">
+            <article class="card">
+              <p>Payroll Requests</p>
+              <strong id="leadWorkbenchPayroll">0</strong>
+            </article>
+            <article class="card">
+              <p>Recruitment Requests</p>
+              <strong id="leadWorkbenchRecruitment">0</strong>
+            </article>
+            <article class="card">
+              <p>Filtered Results</p>
+              <strong id="leadWorkbenchFiltered">0</strong>
+            </article>
+          </div>
+
+          <div class="card" style="overflow-x: auto">
+            <table class="comparison-table" id="adminLeadsWorkbenchTable" aria-label="Lead management table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Form</th>
+                  <th>Email</th>
+                  <th>Company</th>
+                  <th>Page</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td colspan="6">Loading...</td></tr>
+              </tbody>
+            </table>
+            <p id="adminLeadEmptyState" class="muted" style="display: none; margin: 12px 0 0">
+              No leads match your current filters.
+            </p>
+          </div>
+
+          <div id="adminLeadsPagination" class="admin-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

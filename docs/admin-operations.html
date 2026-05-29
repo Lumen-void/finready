@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Operations | FinReady</title>
+    <meta
+      name="description"
+      content="Operations board for payroll and recruitment requests with live queue visibility and actionable timelines."
+    />
+    <link rel="canonical" href="https://finready.ai/admin-operations" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="about" data-admin-page="operations">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="admin-shell">
+        <div class="container">
+          <div class="admin-shell-head">
+            <div>
+              <span class="eyebrow">Execution Layer</span>
+              <h1>Operations Board</h1>
+              <p>
+                Monitor and prioritize payroll and recruitment requests with one
+                command view for cross-functional teams.
+              </p>
+            </div>
+            <div class="admin-inline-kpis">
+              <article>
+                <p>Open Payroll</p>
+                <strong id="opPayrollOpen">0</strong>
+              </article>
+              <article>
+                <p>Total Payroll</p>
+                <strong id="opPayrollTotal">0</strong>
+              </article>
+              <article>
+                <p>Open Hiring</p>
+                <strong id="opRecruitmentOpen">0</strong>
+              </article>
+            </div>
+          </div>
+
+          <nav class="admin-workspace-nav" aria-label="Admin workspace">
+            <a class="admin-nav-link" href="/admin" data-admin-tab="overview">Overview</a>
+            <a class="admin-nav-link" href="/admin-leads" data-admin-tab="leads">Leads</a>
+            <a class="admin-nav-link" href="/admin-users" data-admin-tab="users">Users</a>
+            <a class="admin-nav-link" href="/admin-operations" data-admin-tab="operations">Operations</a>
+            <a class="admin-nav-link" href="/admin-analytics" data-admin-tab="analytics">Analytics</a>
+            <a class="admin-nav-link" href="/admin-courses" data-admin-tab="courses">Courses</a>
+            <a class="admin-nav-link" href="/admin-tools" data-admin-tab="tools">Tools</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section admin-section-tight">
+        <div class="container dashboard-layout">
+          <div>
+            <div class="card" style="margin-bottom: 16px; overflow-x: auto">
+              <div class="admin-panel-head">
+                <h2>Payroll Queue</h2>
+                <span class="tag">Finance Ops</span>
+              </div>
+              <table class="comparison-table" id="payrollRequestsTable" aria-label="Payroll queue table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Organization</th>
+                    <th>Status</th>
+                    <th>Volume</th>
+                    <th>Challenge</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td colspan="5">Loading payroll queue...</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card" style="overflow-x: auto">
+              <div class="admin-panel-head">
+                <h2>Recruitment Queue</h2>
+                <span class="tag">People Ops</span>
+              </div>
+              <table class="comparison-table" id="recruitmentRequestsTable" aria-label="Recruitment queue table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Organization</th>
+                    <th>Status</th>
+                    <th>Open Roles</th>
+                    <th>Challenge</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td colspan="5">Loading recruitment queue...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside>
+            <div class="card" style="margin-bottom: 14px">
+              <h3>Queue Snapshot</h3>
+              <p><strong id="opRecruitmentTotal">0</strong> total recruitment requests</p>
+              <p><strong id="opCombinedOpen">0</strong> combined open operations</p>
+            </div>
+
+            <div class="card">
+              <h3>Latest Activity</h3>
+              <ul id="operationsTimeline">
+                <li>Loading activity stream...</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

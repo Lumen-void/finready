@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinReady | Privacy Policy</title>
+    <meta name="description" content="Privacy policy for FinReady AI platform and learning products." />
+    <link rel="canonical" href="https://finready.ai/privacy" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260333" />
+  </head>
+  <body data-page="about">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+    <main id="mainContent">
+      <section class="section"><div class="container"><span class="eyebrow">Legal</span><h1>Privacy Policy</h1><p>FinReady collects only the data required to deliver platform functionality, support, and product analytics. Credentials are stored with hashed passwords in database mode.</p></div></section>
+    </main>
+    <div data-site-footer></div>
+    <script src="assets/js/main.js?v=20260324"></script>
+  </body>
+</html>

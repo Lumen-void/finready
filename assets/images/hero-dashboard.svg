@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" role="img" aria-label="FinReady Dashboard Preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062846"/>
+      <stop offset="1" stop-color="#0f74c8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="640" rx="36" fill="url(#bg)"/>
+  <rect x="34" y="34" width="932" height="572" rx="26" fill="#0a355d" opacity="0.55"/>
+  <rect x="72" y="90" width="250" height="132" rx="18" fill="url(#panel)"/>
+  <rect x="72" y="246" width="250" height="132" rx="18" fill="url(#panel)"/>
+  <rect x="72" y="402" width="250" height="132" rx="18" fill="url(#panel)"/>
+  <rect x="346" y="90" width="582" height="196" rx="20" fill="url(#panel)"/>
+  <rect x="346" y="314" width="276" height="220" rx="20" fill="url(#panel)"/>
+  <rect x="652" y="314" width="276" height="220" rx="20" fill="url(#panel)"/>
+  <polyline points="394,248 476,176 542,204 612,146 704,196 772,136 860,174" fill="none" stroke="#6cf2de" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="860" cy="174" r="10" fill="#6cf2de"/>
+</svg>

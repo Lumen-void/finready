@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Courses | FinReady</title>
+    <meta
+      name="description"
+      content="Course catalog management workspace for creating, editing, publishing, and organizing FinReady courses."
+    />
+    <link rel="canonical" href="https://finready.ai/admin-courses" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="about" data-admin-page="courses">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="admin-shell">
+        <div class="container">
+          <div class="admin-shell-head">
+            <div>
+              <span class="eyebrow">Catalog Control</span>
+              <h1>Course Manager</h1>
+              <p>
+                Create, edit, publish, and reorder courses from one admin workspace.
+              </p>
+            </div>
+            <div class="admin-inline-kpis">
+              <article>
+                <p>Total Courses</p>
+                <strong id="adminCoursesTotal">0</strong>
+              </article>
+              <article>
+                <p>Published</p>
+                <strong id="adminCoursesPublished">0</strong>
+              </article>
+              <article>
+                <p>Draft</p>
+                <strong id="adminCoursesDraft">0</strong>
+              </article>
+            </div>
+          </div>
+
+          <nav class="admin-workspace-nav" aria-label="Admin workspace">
+            <a class="admin-nav-link" href="/admin" data-admin-tab="overview">Overview</a>
+            <a class="admin-nav-link" href="/admin-leads" data-admin-tab="leads">Leads</a>
+            <a class="admin-nav-link" href="/admin-users" data-admin-tab="users">Users</a>
+            <a class="admin-nav-link" href="/admin-operations" data-admin-tab="operations">Operations</a>
+            <a class="admin-nav-link" href="/admin-analytics" data-admin-tab="analytics">Analytics</a>
+            <a class="admin-nav-link" href="/admin-courses" data-admin-tab="courses">Courses</a>
+            <a class="admin-nav-link" href="/admin-tools" data-admin-tab="tools">Tools</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section admin-section-tight">
+        <div class="container">
+          <div class="card admin-toolbar">
+            <input
+              id="adminCourseSearch"
+              type="search"
+              class="search-input"
+              placeholder="Search by title, slug, or instructor"
+              aria-label="Search courses"
+            />
+            <select id="adminCourseStatus" aria-label="Filter by status">
+              <option value="all">All status</option>
+              <option value="published">Published</option>
+              <option value="draft">Draft</option>
+            </select>
+            <select id="adminCourseTopic" aria-label="Filter by topic">
+              <option value="all">All topics</option>
+              <option value="fundamentals">Fundamentals</option>
+              <option value="risk">Risk</option>
+              <option value="prompt">Prompt</option>
+              <option value="accounting">Accounting</option>
+              <option value="analytics">Analytics</option>
+            </select>
+          </div>
+
+          <div class="admin-manager-grid">
+            <article class="card">
+              <h2 id="adminCourseFormTitle">Create Course</h2>
+              <form id="adminCourseForm" class="admin-form-grid">
+                <input type="hidden" id="adminCourseId" name="id" />
+
+                <label>
+                  Slug
+                  <input id="adminCourseSlug" name="slug" type="text" required placeholder="ai-accounting-workflows" />
+                </label>
+                <label>
+                  Title
+                  <input id="adminCourseTitle" name="title" type="text" required placeholder="AI for Accounting Workflows" />
+                </label>
+                <label>
+                  Instructor
+                  <input id="adminCourseInstructor" name="instructor" type="text" placeholder="Maria Gomez" />
+                </label>
+                <label>
+                  Summary
+                  <textarea id="adminCourseSummary" name="summary" rows="3" placeholder="Short description shown on course cards."></textarea>
+                </label>
+
+                <label>
+                  Topic
+                  <select id="adminCourseTopicValue" name="topic">
+                    <option value="fundamentals">Fundamentals</option>
+                    <option value="risk">Risk</option>
+                    <option value="prompt">Prompt</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="analytics">Analytics</option>
+                  </select>
+                </label>
+                <label>
+                  Level
+                  <select id="adminCourseLevel" name="level">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                  </select>
+                </label>
+                <label>
+                  Duration (Hours)
+                  <input id="adminCourseDurationHours" name="durationHours" type="number" min="0" step="1" value="4" />
+                </label>
+                <label>
+                  Duration Bucket
+                  <select id="adminCourseDurationBucket" name="durationBucket">
+                    <option value="short">Short</option>
+                    <option value="mid">Mid</option>
+                    <option value="long">Long</option>
+                  </select>
+                </label>
+                <label>
+                  Format
+                  <select id="adminCourseFormat" name="format">
+                    <option value="selfpaced">Self-Paced</option>
+                    <option value="cohort">Cohort</option>
+                    <option value="live">Live</option>
+                  </select>
+                </label>
+                <label>
+                  Certification Type
+                  <select id="adminCourseCertType" name="certType">
+                    <option value="finready">FinReady Cert</option>
+                    <option value="university">University</option>
+                    <option value="cpe">CPE Credits</option>
+                  </select>
+                </label>
+                <label>
+                  Rating
+                  <input id="adminCourseRating" name="rating" type="number" min="0" max="5" step="0.1" value="4.5" />
+                </label>
+                <label>
+                  Enrollment Count
+                  <input id="adminCourseEnrollCount" name="enrollCount" type="number" min="0" step="1" value="0" />
+                </label>
+                <label>
+                  Release Year
+                  <input id="adminCourseReleaseYear" name="releaseYear" type="number" min="2020" step="1" value="2026" />
+                </label>
+                <label>
+                  Price (USD)
+                  <input id="adminCoursePriceUsd" name="priceUsd" type="number" min="0" step="1" value="0" />
+                </label>
+                <label>
+                  Display Order
+                  <input id="adminCourseDisplayOrder" name="displayOrder" type="number" min="0" step="1" value="0" />
+                </label>
+                <label class="admin-check-row">
+                  <input id="adminCoursePublished" name="isPublished" type="checkbox" checked />
+                  Published
+                </label>
+
+                <div class="admin-form-actions">
+                  <button id="adminCourseSubmit" class="btn btn-primary" type="submit">Create Course</button>
+                  <button id="adminCourseReset" class="btn btn-outline" type="button">Reset</button>
+                </div>
+                <p id="adminCourseMessage" class="muted" aria-live="polite"></p>
+              </form>
+            </article>
+
+            <article class="card" style="overflow-x: auto">
+              <h2>Course Catalog</h2>
+              <table class="comparison-table" id="adminCoursesTable" aria-label="Course catalog table">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Topic</th>
+                    <th>Level</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Updated</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td colspan="7">Loading courses...</td></tr>
+                </tbody>
+              </table>
+              <div id="adminCoursesPagination" class="admin-pagination"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

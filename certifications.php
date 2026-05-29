@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinReady | Certification Hub</title>
+    <meta
+      name="description"
+      content="Explore FinReady certification tracks, roadmap progression, and employer verification workflows."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260333" />
+  </head>
+  <body data-page="courses">
+    <div data-site-header></div>
+
+    <main>
+      <section class="page-hero" style="background: linear-gradient(180deg, #f1f7ff, #eefcff 75%, #fafafa)">
+        <div class="container split-hero">
+          <div>
+            <span class="eyebrow">Certification Hub</span>
+            <h1>FinReady Certifications</h1>
+            <p>
+              Build stackable credentials from foundation to professional designation,
+              with employer-ready verification built in.
+            </p>
+            <a class="btn btn-primary" href="#tracks">View All Tracks</a>
+          </div>
+          <div class="card">
+            <h3>How Certification Works</h3>
+            <div class="timeline-strip">
+              <div class="timeline-box">1. Complete Course</div>
+              <div class="timeline-box">2. Pass Assessment</div>
+              <div class="timeline-box">3. Earn Badge</div>
+              <div class="timeline-box">4. Share & Verify</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 24px">
+        <div class="container">
+          <h2>Certification Roadmap</h2>
+          <p>Click any node to view requirements and recommended order.</p>
+          <div class="roadmap">
+            <div class="roadmap-grid">
+              <div class="roadmap-col">
+                <button class="road-node fin" data-title="Foundation: Financial Literacy" data-detail="3 courses  |  12 hours  |  beginner pathway for students and early-career professionals.">
+                  Foundation: Financial Literacy
+                </button>
+                <button class="road-node ai" data-title="Foundation: AI Essentials" data-detail="4 courses  |  15 hours  |  core AI concepts, safety, and prompt fluency.">
+                  Foundation: AI Essentials
+                </button>
+                <button class="road-node fin" data-title="Foundation: Accounting Systems" data-detail="3 courses  |  11 hours  |  practical accounting operations with automation.">
+                  Foundation: Accounting Systems
+                </button>
+              </div>
+
+              <div class="roadmap-col">
+                <button class="road-node ai" data-title="Specialist: Payroll Automation" data-detail="2 courses  |  8 hours  |  payroll quality, policy compliance, and alerts.">
+                  Specialist: Payroll Automation
+                </button>
+                <button class="road-node fin" data-title="Specialist: Risk & Compliance" data-detail="3 courses  |  13 hours  |  risk scoring, controls, and governance frameworks.">
+                  Specialist: Risk & Compliance
+                </button>
+                <button class="road-node leadership" data-title="Specialist: Finance Leadership AI" data-detail="2 courses  |  7 hours  |  strategic decisioning with AI and team operating models.">
+                  Specialist: Finance Leadership AI
+                </button>
+              </div>
+
+              <div class="roadmap-col">
+                <button class="road-node leadership" data-title="Professional Designation" data-detail="Capstone + proctored exam  |  portfolio review  |  annual renewal with CPE credits.">
+                  Professional Designation
+                </button>
+              </div>
+            </div>
+            <div class="roadmap-detail" id="roadmapDetail"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tracks" style="padding-top: 0">
+        <div class="container">
+          <h2>Certification Tracks</h2>
+          <div class="tracks-grid">
+            <article class="track-card fin">
+              <h3>Finance Analyst Track</h3>
+              <p>4 courses  |  22 hours  |  Intermediate</p>
+              <a class="link-arrow" href="courses">View Track -></a>
+            </article>
+            <article class="track-card ai">
+              <h3>AI Operations Track</h3>
+              <p>5 courses  |  26 hours  |  Intermediate</p>
+              <a class="link-arrow" href="courses">View Track -></a>
+            </article>
+            <article class="track-card leadership">
+              <h3>Leadership & Governance Track</h3>
+              <p>3 courses  |  16 hours  |  Advanced</p>
+              <a class="link-arrow" href="courses">View Track -></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container split-hero">
+          <div>
+            <h2>Employer Verification</h2>
+            <p>
+              Employers can validate credentials using secure QR scans, verification codes,
+              or the FinReady API. Every certificate includes audit metadata and issue history.
+            </p>
+            <a class="btn btn-secondary" href="contact">Employer Portal</a>
+          </div>
+          <div class="card">
+            <h3>Verification Flow</h3>
+            <ol>
+              <li>Enter candidate certificate code or scan QR.</li>
+              <li>Review credential validity, date, and score report.</li>
+              <li>Export verification record for HR compliance.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <h2>Certification FAQ</h2>
+          <div class="accordion">
+            <div class="accordion-item open">
+              <button class="accordion-trigger" type="button">How much do certifications cost?</button>
+              <div class="accordion-panel">Most certifications are included in Pro, while enterprise plans can bundle team certification seats.</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" type="button">Do certifications expire?</button>
+              <div class="accordion-panel">Yes. Most credentials renew yearly through continuing education and assessment refresh.</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" type="button">Are CPE credits supported?</button>
+              <div class="accordion-panel">Selected tracks include CPE credits and downloadable completion transcripts.</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" type="button">Can employers verify through API?</button>
+              <div class="accordion-panel">Yes. Enterprise accounts get verification API access with usage logs and webhooks.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260324"></script>
+  </body>
+</html>

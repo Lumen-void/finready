@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Analytics | FinReady</title>
+    <meta
+      name="description"
+      content="Advanced analytics view with funnel health, lead trends, source mix, and top-demand page insights."
+    />
+    <link rel="canonical" href="https://finready.ai/admin-analytics" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="about" data-admin-page="analytics">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="admin-shell">
+        <div class="container">
+          <div class="admin-shell-head">
+            <div>
+              <span class="eyebrow">Revenue Intelligence</span>
+              <h1>Analytics Studio</h1>
+              <p>
+                Monitor funnel performance, demand distribution, and operational conversion
+                signals to optimize growth and delivery.
+              </p>
+            </div>
+            <div class="admin-inline-kpis">
+              <article>
+                <p>Total Leads</p>
+                <strong id="analyticsLeadsTotal">0</strong>
+              </article>
+              <article>
+                <p>Demo Rate</p>
+                <strong id="analyticsDemoRate">0%</strong>
+              </article>
+              <article>
+                <p>Ops Conversion</p>
+                <strong id="analyticsOpsRate">0%</strong>
+              </article>
+            </div>
+          </div>
+
+          <nav class="admin-workspace-nav" aria-label="Admin workspace">
+            <a class="admin-nav-link" href="/admin" data-admin-tab="overview">Overview</a>
+            <a class="admin-nav-link" href="/admin-leads" data-admin-tab="leads">Leads</a>
+            <a class="admin-nav-link" href="/admin-users" data-admin-tab="users">Users</a>
+            <a class="admin-nav-link" href="/admin-operations" data-admin-tab="operations">Operations</a>
+            <a class="admin-nav-link" href="/admin-analytics" data-admin-tab="analytics">Analytics</a>
+            <a class="admin-nav-link" href="/admin-courses" data-admin-tab="courses">Courses</a>
+            <a class="admin-nav-link" href="/admin-tools" data-admin-tab="tools">Tools</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section admin-section-tight">
+        <div class="container dashboard-layout">
+          <div>
+            <div class="card" style="margin-bottom: 16px">
+              <div class="admin-panel-head">
+                <h2>Funnel Health</h2>
+                <span class="tag">Lead -> Demo -> Ops</span>
+              </div>
+              <div id="analyticsFunnel" class="admin-funnel">
+                <p class="muted">Loading funnel...</p>
+              </div>
+            </div>
+
+            <div class="card" style="margin-bottom: 16px">
+              <div class="admin-panel-head">
+                <h2>Daily Lead Trend (14 Days)</h2>
+              </div>
+              <div id="analyticsDayBars" class="admin-bars">
+                <p class="muted">Loading trend...</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="admin-panel-head">
+                <h2>Top Demand Pages</h2>
+              </div>
+              <ul id="analyticsTopPages" class="admin-ranked-list">
+                <li>Loading page mix...</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside>
+            <div class="card" style="margin-bottom: 14px">
+              <h3>Request Mix</h3>
+              <ul id="analyticsMix" class="admin-ranked-list">
+                <li>Loading source mix...</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Actionable Insights</h3>
+              <ul id="analyticsInsights">
+                <li>Loading insights...</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

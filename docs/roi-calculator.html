@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinReady | ROI Calculator</title>
+    <meta name="description" content="Estimate savings and risk reduction with FinReady AI finance and payroll workflows." />
+    <link rel="canonical" href="https://finready.ai/roi-calculator" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="pricing">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+    <main id="mainContent">
+      <section class="hero" style="min-height: 48vh">
+        <div class="container">
+          <span class="eyebrow">ROI Estimator</span>
+          <h1>Estimate Annual Impact Before You Buy</h1>
+          <p>Use your payroll size, team headcount, and attrition profile to model projected outcomes.</p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 30px">
+        <div class="container card" style="max-width: 880px">
+          <div class="form-grid">
+            <input id="demoPayroll" type="number" placeholder="Annual payroll volume (USD)" aria-label="Annual payroll volume" />
+            <input id="demoHeadcount" type="number" placeholder="Headcount" aria-label="Headcount" />
+            <input id="demoAttrition" type="number" placeholder="Attrition rate (%)" aria-label="Attrition rate" />
+            <button id="runDemo" class="btn btn-primary" type="button">Run ROI Simulation</button>
+          </div>
+          <div id="demoOutput" class="surface" style="margin-top: 18px; padding: 16px">
+            <p>Run the simulation to view projected risk score and annual savings.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Tools | FinReady</title>
+    <meta
+      name="description"
+      content="AI tool catalog management workspace for creating, editing, activating, and organizing FinReady tools."
+    />
+    <link rel="canonical" href="https://finready.ai/admin-tools" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="about" data-admin-page="tools">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="admin-shell">
+        <div class="container">
+          <div class="admin-shell-head">
+            <div>
+              <span class="eyebrow">Product Catalog</span>
+              <h1>Tool Manager</h1>
+              <p>
+                Manage AI tools, categories, plans, and CTA routing from one admin workspace.
+              </p>
+            </div>
+            <div class="admin-inline-kpis">
+              <article>
+                <p>Total Tools</p>
+                <strong id="adminToolsTotal">0</strong>
+              </article>
+              <article>
+                <p>Active</p>
+                <strong id="adminToolsActive">0</strong>
+              </article>
+              <article>
+                <p>Inactive</p>
+                <strong id="adminToolsInactive">0</strong>
+              </article>
+            </div>
+          </div>
+
+          <nav class="admin-workspace-nav" aria-label="Admin workspace">
+            <a class="admin-nav-link" href="/admin" data-admin-tab="overview">Overview</a>
+            <a class="admin-nav-link" href="/admin-leads" data-admin-tab="leads">Leads</a>
+            <a class="admin-nav-link" href="/admin-users" data-admin-tab="users">Users</a>
+            <a class="admin-nav-link" href="/admin-operations" data-admin-tab="operations">Operations</a>
+            <a class="admin-nav-link" href="/admin-analytics" data-admin-tab="analytics">Analytics</a>
+            <a class="admin-nav-link" href="/admin-courses" data-admin-tab="courses">Courses</a>
+            <a class="admin-nav-link" href="/admin-tools" data-admin-tab="tools">Tools</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section admin-section-tight">
+        <div class="container">
+          <div class="card admin-toolbar">
+            <input
+              id="adminToolSearch"
+              type="search"
+              class="search-input"
+              placeholder="Search by name, slug, or category"
+              aria-label="Search tools"
+            />
+            <select id="adminToolStatus" aria-label="Filter by status">
+              <option value="all">All status</option>
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+            <select id="adminToolCategory" aria-label="Filter by category">
+              <option value="all">All categories</option>
+              <option value="forecasting">Forecasting</option>
+              <option value="analysis">Analysis</option>
+              <option value="compliance">Compliance</option>
+              <option value="budgeting">Budgeting</option>
+              <option value="tax">Tax</option>
+              <option value="payroll">Payroll</option>
+              <option value="recruitment">Recruitment</option>
+            </select>
+          </div>
+
+          <div class="admin-manager-grid">
+            <article class="card">
+              <h2 id="adminToolFormTitle">Create Tool</h2>
+              <form id="adminToolForm" class="admin-form-grid">
+                <input type="hidden" id="adminToolId" name="id" />
+
+                <label>
+                  Slug
+                  <input id="adminToolSlug" name="slug" type="text" required placeholder="cash-flow-forecaster" />
+                </label>
+                <label>
+                  Name
+                  <input id="adminToolName" name="name" type="text" required placeholder="Cash Flow Forecaster" />
+                </label>
+                <label>
+                  Category
+                  <select id="adminToolCategoryValue" name="category">
+                    <option value="forecasting">Forecasting</option>
+                    <option value="analysis">Analysis</option>
+                    <option value="compliance">Compliance</option>
+                    <option value="budgeting">Budgeting</option>
+                    <option value="tax">Tax</option>
+                    <option value="payroll">Payroll</option>
+                    <option value="recruitment">Recruitment</option>
+                  </select>
+                </label>
+                <label>
+                  Summary
+                  <textarea id="adminToolSummary" name="summary" rows="3" placeholder="Short description shown on tool cards."></textarea>
+                </label>
+                <label>
+                  Plan Tier
+                  <select id="adminToolPlanTier" name="planTier">
+                    <option value="free">Free</option>
+                    <option value="pro">Pro</option>
+                    <option value="enterprise">Enterprise</option>
+                  </select>
+                </label>
+                <label>
+                  Icon Code
+                  <input id="adminToolIconCode" name="iconCode" type="text" maxlength="4" placeholder="CF" />
+                </label>
+                <label>
+                  CTA Label
+                  <input id="adminToolCtaLabel" name="ctaLabel" type="text" placeholder="Try It" />
+                </label>
+                <label>
+                  CTA Link
+                  <input id="adminToolCtaHref" name="ctaHref" type="text" placeholder="/tool-detail" />
+                </label>
+                <label>
+                  Display Order
+                  <input id="adminToolDisplayOrder" name="displayOrder" type="number" min="0" step="1" value="0" />
+                </label>
+                <label class="admin-check-row">
+                  <input id="adminToolActive" name="isActive" type="checkbox" checked />
+                  Active
+                </label>
+
+                <div class="admin-form-actions">
+                  <button id="adminToolSubmit" class="btn btn-primary" type="submit">Create Tool</button>
+                  <button id="adminToolReset" class="btn btn-outline" type="button">Reset</button>
+                </div>
+                <p id="adminToolMessage" class="muted" aria-live="polite"></p>
+              </form>
+            </article>
+
+            <article class="card" style="overflow-x: auto">
+              <h2>Tool Catalog</h2>
+              <table class="comparison-table" id="adminToolsTable" aria-label="Tool catalog table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Plan</th>
+                    <th>Status</th>
+                    <th>Updated</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td colspan="6">Loading tools...</td></tr>
+                </tbody>
+              </table>
+              <div id="adminToolsPagination" class="admin-pagination"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

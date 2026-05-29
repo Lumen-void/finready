@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinReady | Recruitment AI</title>
+    <meta name="description" content="Recruitment intelligence for finance hiring with role-fit scoring and talent pipeline analytics." />
+    <link rel="canonical" href="https://finready.ai/recruitment-ai" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260333" />
+  </head>
+  <body data-page="ai-tools">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+    <main id="mainContent">
+      <section class="section">
+        <div class="container">
+          <span class="eyebrow">Recruitment AI</span>
+          <h1>Hire Finance Talent with Role-Fit Intelligence</h1>
+          <p>Prioritize candidates based on skills, readiness, and business outcomes.</p>
+          <div class="card-grid-3" data-dashboard-cards="recruitment" style="margin-bottom: 16px"></div>
+          <form
+            class="form-grid card"
+            data-request-form="recruitment"
+            data-endpoint="/api/recruitment-requests"
+            data-request-message="Recruitment AI request submitted."
+            style="padding: 20px; margin-top: 18px"
+          >
+            <input name="work_email" type="email" required placeholder="Work Email" aria-label="Work Email" />
+            <input name="company" type="text" required placeholder="Company" aria-label="Company" />
+            <input name="open_roles" type="text" placeholder="Current open finance roles" aria-label="Current open finance roles" />
+            <textarea name="primary_goal" placeholder="What hiring bottleneck do you want to solve?" aria-label="Hiring goal"></textarea>
+            <button class="btn btn-primary" type="submit">Request Recruitment AI Setup</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="assets/js/main.js?v=20260324"></script>
+  </body>
+</html>

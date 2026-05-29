@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Users | FinReady</title>
+    <meta
+      name="description"
+      content="User directory for admins to monitor roles, enrollments, credentials, and platform activity."
+    />
+    <link rel="canonical" href="https://finready.ai/admin-users" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="about" data-admin-page="users">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="admin-shell">
+        <div class="container">
+          <div class="admin-shell-head">
+            <div>
+              <span class="eyebrow">Identity + Access</span>
+              <h1>User Directory</h1>
+              <p>
+                Analyze user mix, role distribution, and learning engagement across
+                learners, professionals, and enterprise accounts.
+              </p>
+            </div>
+            <div class="admin-inline-kpis">
+              <article>
+                <p>Total Users</p>
+                <strong id="adminUsersTotal">0</strong>
+              </article>
+              <article>
+                <p>Admins</p>
+                <strong id="adminUsersAdmins">0</strong>
+              </article>
+              <article>
+                <p>Enterprise</p>
+                <strong id="adminUsersEnterprise">0</strong>
+              </article>
+            </div>
+          </div>
+
+          <nav class="admin-workspace-nav" aria-label="Admin workspace">
+            <a class="admin-nav-link" href="/admin" data-admin-tab="overview">Overview</a>
+            <a class="admin-nav-link" href="/admin-leads" data-admin-tab="leads">Leads</a>
+            <a class="admin-nav-link" href="/admin-users" data-admin-tab="users">Users</a>
+            <a class="admin-nav-link" href="/admin-operations" data-admin-tab="operations">Operations</a>
+            <a class="admin-nav-link" href="/admin-analytics" data-admin-tab="analytics">Analytics</a>
+            <a class="admin-nav-link" href="/admin-courses" data-admin-tab="courses">Courses</a>
+            <a class="admin-nav-link" href="/admin-tools" data-admin-tab="tools">Tools</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section admin-section-tight">
+        <div class="container">
+          <div class="card admin-toolbar">
+            <input
+              id="adminUserSearch"
+              type="search"
+              class="search-input"
+              placeholder="Search by name or email"
+              aria-label="Search users"
+            />
+            <select id="adminUserRoleFilter" aria-label="Filter users by role">
+              <option value="all">All roles</option>
+              <option value="admin">Admin</option>
+              <option value="enterprise">Enterprise</option>
+              <option value="professional">Professional</option>
+              <option value="student">Student</option>
+            </select>
+            <article class="admin-chip-card">
+              <p>Learners</p>
+              <strong id="adminUsersLearners">0</strong>
+            </article>
+          </div>
+
+          <div class="card" style="overflow-x: auto">
+            <table class="comparison-table" id="adminUsersTable" aria-label="Admin users table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Enrollments</th>
+                  <th>Certificates</th>
+                  <th>Tool Runs</th>
+                  <th>Created</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td colspan="7">Loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="adminUsersPagination" class="admin-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

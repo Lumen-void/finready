@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" role="img" aria-label="Course Hub Preview">
+  <defs>
+    <linearGradient id="c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062846"/>
+      <stop offset="1" stop-color="#0ca08c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="640" rx="32" fill="url(#c)"/>
+  <rect x="54" y="52" width="892" height="536" rx="24" fill="#ffffff" fill-opacity="0.1"/>
+  <rect x="98" y="112" width="804" height="72" rx="16" fill="#ffffff" fill-opacity="0.2"/>
+  <rect x="98" y="214" width="250" height="330" rx="16" fill="#ffffff" fill-opacity="0.14"/>
+  <rect x="374" y="214" width="250" height="330" rx="16" fill="#ffffff" fill-opacity="0.14"/>
+  <rect x="650" y="214" width="250" height="330" rx="16" fill="#ffffff" fill-opacity="0.14"/>
+  <circle cx="220" cy="286" r="40" fill="#6cf2de" fill-opacity="0.8"/>
+  <circle cx="496" cy="286" r="40" fill="#8ad2ff" fill-opacity="0.8"/>
+  <circle cx="772" cy="286" r="40" fill="#ffd7ad" fill-opacity="0.84"/>
+</svg>

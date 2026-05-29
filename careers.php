@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinReady | Careers</title>
+    <meta name="description" content="Explore open roles at FinReady across engineering, product, and learning." />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260333" />
+  </head>
+  <body data-page="about">
+    <div data-site-header></div>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Careers</span>
+          <h1>Join the FinReady Team</h1>
+          <p>
+            Build products that improve financial outcomes for learners and businesses.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 22px">
+        <div class="container role-grid">
+          <article class="role-card">
+            <h3>Senior Frontend Engineer</h3>
+            <p>Remote  |  Full-time  |  Product Engineering</p>
+            <a class="link-arrow" href="contact">Apply -></a>
+          </article>
+          <article class="role-card">
+            <h3>Learning Experience Designer</h3>
+            <p>Bengaluru  |  Full-time  |  Learning</p>
+            <a class="link-arrow" href="contact">Apply -></a>
+          </article>
+          <article class="role-card">
+            <h3>Enterprise Success Manager</h3>
+            <p>London  |  Full-time  |  Customer Success</p>
+            <a class="link-arrow" href="contact">Apply -></a>
+          </article>
+          <article class="role-card">
+            <h3>AI Product Analyst</h3>
+            <p>Remote  |  Full-time  |  Data & Product</p>
+            <a class="link-arrow" href="contact">Apply -></a>
+          </article>
+          <article class="role-card">
+            <h3>Finance Curriculum Specialist</h3>
+            <p>New York  |  Full-time  |  Content</p>
+            <a class="link-arrow" href="contact">Apply -></a>
+          </article>
+          <article class="role-card">
+            <h3>DevOps Engineer</h3>
+            <p>Remote  |  Full-time  |  Platform</p>
+            <a class="link-arrow" href="contact">Apply -></a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260324"></script>
+  </body>
+</html>

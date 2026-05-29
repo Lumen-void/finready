@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinReady | Learning Dashboard</title>
+    <meta
+      name="description"
+      content="Track progress, certifications, saved tools, and AI recommendations in your FinReady dashboard."
+    />
+    <link rel="canonical" href="https://finready.ai/dashboard" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260333" />
+  </head>
+  <body data-page="courses">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="dashboard-hero">
+        <div class="container split-hero">
+          <div>
+            <h1>Welcome back to your learning workspace</h1>
+            <p>
+              Continue where you left off, track milestones, and keep building
+              finance + AI capability.
+            </p>
+            <p><strong>Average completion:</strong> <span id="learningCompletionAvg">0%</span></p>
+          </div>
+          <div style="text-align: right">
+            <a class="btn btn-primary" href="course-detail">Resume Learning -></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 24px">
+        <div class="container dashboard-layout">
+          <div>
+            <div class="card-grid-3" data-dashboard-cards="personal" style="margin-bottom: 22px"></div>
+            <h2>Courses In Progress</h2>
+            <div class="progress-row">
+              <article class="card progress-card" data-course-id="ai-accounting" data-default-progress="68">
+                <h3>AI for Accounting</h3>
+                <div class="bar"><span style="width: 68%"></span></div>
+                <p data-progress-label>68% complete</p>
+                <div class="hero-cta" style="margin-top: 8px">
+                  <a class="btn btn-primary" href="course-detail">Continue</a>
+                  <button class="btn btn-outline" type="button" data-progress-increment>+10%</button>
+                </div>
+              </article>
+
+              <article class="card progress-card" data-course-id="prompt-finance" data-default-progress="42">
+                <h3>Prompt Engineering for Finance</h3>
+                <div class="bar"><span style="width: 42%"></span></div>
+                <p data-progress-label>42% complete</p>
+                <div class="hero-cta" style="margin-top: 8px">
+                  <a class="btn btn-primary" href="course-detail">Continue</a>
+                  <button class="btn btn-outline" type="button" data-progress-increment>+10%</button>
+                </div>
+              </article>
+            </div>
+
+            <h2 style="margin-top: 26px">AI Recommended Next</h2>
+            <div class="recommend-row">
+              <article class="card"><h3>ML Risk Fundamentals</h3><p>Role-aligned next step</p></article>
+              <article class="card"><h3>Tax AI Essentials</h3><p>Requested by peers in your cohort</p></article>
+              <article class="card"><h3>Data Visualization for CFOs</h3><p>Closes your analytics gap</p></article>
+              <article class="card"><h3>Payroll Controls with AI</h3><p>Supports certification pathway</p></article>
+            </div>
+          </div>
+
+          <aside>
+            <div class="card" style="margin-bottom: 14px">
+              <h3>My Certificates</h3>
+              <ul id="certificateList">
+                <li>Loading certificates...</li>
+              </ul>
+              <a class="link-arrow" href="certifications">View All -></a>
+            </div>
+
+            <div class="card" style="margin-bottom: 14px">
+              <h3>Skill Assessment</h3>
+              <div class="skill-bar fin">
+                <p style="margin: 0 0 6px">Finance 80%</p>
+                <div class="track"><div class="fill"></div></div>
+              </div>
+              <div class="skill-bar ai">
+                <p style="margin: 0 0 6px">AI/ML 60%</p>
+                <div class="track"><div class="fill"></div></div>
+              </div>
+              <div class="skill-bar data">
+                <p style="margin: 0 0 6px">Data 40%</p>
+                <div class="track"><div class="fill"></div></div>
+              </div>
+              <a class="btn btn-outline" href="courses">Take Assessment</a>
+            </div>
+
+            <div class="card">
+              <h3>Workspace</h3>
+              <ul>
+                <li><a href="ai-tools">Saved AI tools sync automatically</a></li>
+                <li><a href="courses">Saved courses sync automatically</a></li>
+                <li><a href="admin">Admin dashboard for lead intelligence</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260324"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Control Center | FinReady</title>
+    <meta
+      name="description"
+      content="FinReady admin control center with lead velocity, operations signals, and platform-level performance overview."
+    />
+    <link rel="canonical" href="https://finready.ai/admin" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="about" data-admin-page="overview">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="admin-shell">
+        <div class="container">
+          <div class="admin-shell-head">
+            <div>
+              <span class="eyebrow">FinReady Control Center</span>
+              <h1>Admin Overview</h1>
+              <p>
+                Run the full platform from one workspace: growth pipeline, user activity,
+                recruitment and payroll operations, and team performance.
+              </p>
+            </div>
+            <div class="admin-inline-kpis">
+              <article>
+                <p>Live Leads</p>
+                <strong id="adminLiveLeads">0</strong>
+              </article>
+              <article>
+                <p>Open Payroll</p>
+                <strong id="adminLivePayroll">0</strong>
+              </article>
+              <article>
+                <p>Open Hiring</p>
+                <strong id="adminLiveRecruitment">0</strong>
+              </article>
+            </div>
+          </div>
+
+          <nav class="admin-workspace-nav" aria-label="Admin workspace">
+            <a class="admin-nav-link" href="/admin" data-admin-tab="overview">Overview</a>
+            <a class="admin-nav-link" href="/admin-leads" data-admin-tab="leads">Leads</a>
+            <a class="admin-nav-link" href="/admin-users" data-admin-tab="users">Users</a>
+            <a class="admin-nav-link" href="/admin-operations" data-admin-tab="operations">Operations</a>
+            <a class="admin-nav-link" href="/admin-analytics" data-admin-tab="analytics">Analytics</a>
+            <a class="admin-nav-link" href="/admin-courses" data-admin-tab="courses">Courses</a>
+            <a class="admin-nav-link" href="/admin-tools" data-admin-tab="tools">Tools</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section admin-section-tight">
+        <div class="container">
+          <div class="card-grid-3" data-dashboard-cards="admin"></div>
+        </div>
+      </section>
+
+      <section class="section admin-section-tight">
+        <div class="container dashboard-layout">
+          <div>
+            <div class="card" style="margin-bottom: 16px">
+              <div class="admin-panel-head">
+                <h2>Lead Velocity (Last 10 Days)</h2>
+                <a class="btn btn-outline" href="/admin-analytics">Open Full Analytics</a>
+              </div>
+              <div id="adminLeadsTrend" class="admin-bars">
+                <p class="muted">Loading trend...</p>
+              </div>
+            </div>
+
+            <div class="card" style="overflow-x: auto">
+              <div class="admin-panel-head">
+                <h2>Recent Leads</h2>
+                <a class="btn btn-outline" href="/admin-leads">Open Leads Desk</a>
+              </div>
+              <table class="comparison-table" id="adminLeadsTable" aria-label="Recent leads table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Form</th>
+                    <th>Email</th>
+                    <th>Company</th>
+                    <th>Page</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td colspan="5">Loading...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside>
+            <div class="card" style="margin-bottom: 14px">
+              <h3>Lead Summary</h3>
+              <p><strong id="adminLeadCount">0</strong> total submissions</p>
+              <p><strong id="adminDemoCount">0</strong> demo requests</p>
+              <p><strong id="adminContactCount">0</strong> contact requests</p>
+            </div>
+
+            <div class="card" style="margin-bottom: 14px">
+              <h3>Top Demand Themes</h3>
+              <ul id="adminTopThemes">
+                <li>Loading...</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Top Entry Pages</h3>
+              <ul id="adminTopPages">
+                <li>Loading...</li>
+              </ul>
+              <div class="admin-quick-links">
+                <a href="/admin-users">Manage users -></a>
+                <a href="/admin-operations">Track operations -></a>
+                <a href="/admin-courses">Manage courses -></a>
+                <a href="/admin-tools">Manage tools -></a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

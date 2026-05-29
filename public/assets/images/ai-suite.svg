@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" role="img" aria-label="AI Suite Overview">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#031b33"/>
+      <stop offset="1" stop-color="#095f8d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="640" rx="32" fill="url(#a)"/>
+  <rect x="48" y="56" width="904" height="528" rx="24" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="96" y="122" width="808" height="58" rx="16" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="96" y="220" width="246" height="148" rx="16" fill="#6cf2de" fill-opacity="0.28"/>
+  <rect x="377" y="220" width="246" height="148" rx="16" fill="#84c9ff" fill-opacity="0.24"/>
+  <rect x="658" y="220" width="246" height="148" rx="16" fill="#ffd7ad" fill-opacity="0.26"/>
+  <rect x="96" y="404" width="808" height="130" rx="16" fill="#ffffff" fill-opacity="0.14"/>
+  <line x1="126" y1="452" x2="610" y2="452" stroke="#9fe6d8" stroke-width="10" stroke-linecap="round"/>
+  <line x1="126" y1="486" x2="760" y2="486" stroke="#88c9fb" stroke-width="10" stroke-linecap="round"/>
+</svg>

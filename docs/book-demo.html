@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Demo | FinReady</title>
+    <meta
+      name="description"
+      content="Book a FinReady enterprise demo for AI-powered finance automation, payroll intelligence, recruitment services, and workforce upskilling."
+    />
+    <meta property="og:title" content="Book a Demo | FinReady" />
+    <meta
+      property="og:description"
+      content="Schedule a personalized FinReady demo for your team."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://finready.ai/book-demo" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260320" />
+  </head>
+  <body data-page="pricing">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="page-hero">
+        <div class="container split-hero">
+          <div>
+            <span class="eyebrow">Enterprise Demo</span>
+            <h1>See FinReady Live in Your Workflow</h1>
+            <p>
+              Get a tailored walkthrough of AI finance tools, payroll controls,
+              recruitment intelligence, and upskilling dashboards.
+            </p>
+            <div class="badge-row">
+              <span class="badge-chip">30-minute session</span>
+              <span class="badge-chip">Role-based use cases</span>
+              <span class="badge-chip">ROI estimate included</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>What You Will Get</h3>
+            <ul>
+              <li>Custom tool walkthrough by finance function</li>
+              <li>Implementation timeline and integration checklist</li>
+              <li>Pricing recommendation by team size</li>
+              <li>Personalized training and certification plan</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 22px">
+        <div class="container card demo-form-card">
+          <h2>Book Your Demo</h2>
+          <p class="muted">Complete 3 quick steps. We respond within one business day.</p>
+
+          <div class="step-indicator" aria-label="Demo booking progress">
+            <span class="active" data-step-dot="1">1</span>
+            <span data-step-dot="2">2</span>
+            <span data-step-dot="3">3</span>
+          </div>
+
+          <form
+            id="bookDemoForm"
+            class="demo-form"
+            data-form-name="book_demo"
+            data-form-message="Thanks. Your demo request is in and we will confirm shortly."
+            data-form-redirect="/thank-you?type=demo"
+            data-multi-step-form
+          >
+            <div class="form-step" data-step="1">
+              <div class="form-grid">
+                <input name="full_name" type="text" required placeholder="Full Name" aria-label="Full Name" />
+                <input name="work_email" type="email" required placeholder="Work Email" aria-label="Work Email" />
+                <input name="company" type="text" required placeholder="Company" aria-label="Company" />
+                <input name="job_title" type="text" placeholder="Job Title" aria-label="Job Title" />
+              </div>
+              <div class="form-step-actions">
+                <button class="btn btn-primary" type="button" data-step-next>Continue</button>
+              </div>
+            </div>
+
+            <div class="form-step hidden" data-step="2">
+              <div class="form-grid">
+                <select name="team_size" required aria-label="Team size">
+                  <option value="">Team size</option>
+                  <option>1-10</option>
+                  <option>11-50</option>
+                  <option>51-200</option>
+                  <option>201-1000</option>
+                  <option>1000+</option>
+                </select>
+                <select name="primary_goal" required aria-label="Primary goal">
+                  <option value="">Primary goal</option>
+                  <option>Finance automation</option>
+                  <option>Payroll optimization</option>
+                  <option>Recruitment intelligence</option>
+                  <option>Workforce upskilling</option>
+                  <option>Certification pathways</option>
+                </select>
+                <input name="preferred_date" type="date" aria-label="Preferred date" />
+                <select name="timezone" aria-label="Timezone">
+                  <option>Asia/Kolkata</option>
+                  <option>America/New_York</option>
+                  <option>Europe/London</option>
+                  <option>Asia/Singapore</option>
+                </select>
+              </div>
+              <div class="form-step-actions">
+                <button class="btn btn-outline" type="button" data-step-prev>Back</button>
+                <button class="btn btn-primary" type="button" data-step-next>Continue</button>
+              </div>
+            </div>
+
+            <div class="form-step hidden" data-step="3">
+              <div class="form-grid">
+                <textarea
+                  name="current_stack"
+                  placeholder="Tell us about your current tools and challenges"
+                  aria-label="Current stack and challenges"
+                ></textarea>
+                <textarea
+                  name="success_metrics"
+                  placeholder="What outcomes matter most? (time saved, accuracy, hiring speed, etc.)"
+                  aria-label="Success metrics"
+                ></textarea>
+              </div>
+              <div class="check-row consent-row">
+                <input id="demoConsent" name="consent" type="checkbox" required />
+                <label for="demoConsent">I agree to be contacted about FinReady products and services.</label>
+              </div>
+              <input name="lead_source" type="hidden" value="website_demo_form" />
+              <div class="form-step-actions">
+                <button class="btn btn-outline" type="button" data-step-prev>Back</button>
+                <button class="btn btn-primary" type="submit">Book Demo</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "FinReady Enterprise Demo",
+        "provider": {"@type": "Organization", "name": "FinReady"},
+        "serviceType": "AI finance and learning platform demonstration",
+        "areaServed": "Global"
+      }
+    </script>
+    <script src="assets/js/main.js?v=20260320"></script>
+  </body>
+</html>

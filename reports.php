@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinReady | Reports</title>
+    <meta name="description" content="Operational and learning reports for finance leaders and L&D teams." />
+    <link rel="canonical" href="https://finready.ai/reports" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260333" />
+  </head>
+  <body data-page="courses">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+    <main id="mainContent">
+      <section class="section">
+        <div class="container">
+          <span class="eyebrow">Reports</span>
+          <h1>Executive and Operational Reporting</h1>
+          <div class="card-grid-3" data-dashboard-cards="reports" style="margin-bottom: 20px"></div>
+          <div class="card-grid-3">
+            <article class="card"><h3>Finance Ops Report</h3><p>Variance trends, close-cycle velocity, and risk hotspots.</p></article>
+            <article class="card"><h3>Learning Performance</h3><p>Program completion, assessment performance, and certification issuance.</p></article>
+            <article class="card"><h3>Workforce Readiness</h3><p>Role readiness and skill-gap trends across teams.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="assets/js/main.js?v=20260324"></script>
+  </body>
+</html>

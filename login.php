@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | FinReady</title>
+    <meta name="description" content="Login to FinReady to access your saved tools, courses, certifications, and dashboard progress." />
+    <link rel="canonical" href="https://finready.ai/login" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260333" />
+  </head>
+  <body data-page="courses">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+
+    <main id="mainContent">
+      <section class="page-hero">
+        <div class="container text-center">
+          <span class="eyebrow">Account</span>
+          <h1>Welcome Back</h1>
+          <p>Login to continue your learning path and team workspace.</p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 20px">
+        <div class="container" style="max-width: 640px">
+          <div class="card auth-card">
+            <form id="loginForm" data-auth-form="login">
+              <div class="form-grid">
+                <input name="email" type="email" required placeholder="Email" aria-label="Email" />
+                <input name="password" type="password" required placeholder="Password" aria-label="Password" />
+              </div>
+              <div class="form-step-actions" style="margin-top: 16px">
+                <button class="btn btn-primary" type="submit">Login</button>
+                <a class="btn btn-outline" href="register">Create account</a>
+              </div>
+              <p class="muted" id="authMessage" style="margin-top: 10px"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="assets/js/main.js?v=20260324"></script>
+  </body>
+</html>

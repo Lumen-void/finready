@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinReady | Payroll AI</title>
+    <meta name="description" content="AI payroll management workspace for anomaly detection, audit-ready checks, and compliance confidence." />
+    <link rel="canonical" href="https://finready.ai/payroll-ai" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260333" />
+  </head>
+  <body data-page="ai-tools">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div data-site-header></div>
+    <main id="mainContent">
+      <section class="section">
+        <div class="container">
+          <span class="eyebrow">Payroll AI</span>
+          <h1>Automate Payroll Accuracy at Scale</h1>
+          <p>Detect anomalies, prioritize exceptions, and improve monthly processing reliability.</p>
+          <div class="card-grid-3" data-dashboard-cards="payroll" style="margin-bottom: 16px"></div>
+          <form
+            class="form-grid card"
+            data-request-form="payroll"
+            data-endpoint="/api/payroll-requests"
+            data-request-message="Payroll AI request submitted."
+            style="padding: 20px; margin-top: 18px"
+          >
+            <input name="work_email" type="email" required placeholder="Work Email" aria-label="Work Email" />
+            <input name="company" type="text" required placeholder="Company" aria-label="Company" />
+            <input name="payroll_size" type="text" placeholder="Monthly payroll volume" aria-label="Monthly payroll volume" />
+            <textarea name="primary_goal" placeholder="Main payroll challenge" aria-label="Main payroll challenge"></textarea>
+            <button class="btn btn-primary" type="submit">Request Payroll AI Setup</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script src="assets/js/main.js?v=20260324"></script>
+  </body>
+</html>

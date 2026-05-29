@@ -1,0 +1,32 @@
+{
+  "name": "finready-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node app.js",
+    "lint": "next lint",
+    "start:next": "next start",
+    "sync:assets": "node scripts/sync-assets.mjs",
+    "predev": "npm run sync:assets",
+    "prebuild": "npm run sync:assets",
+    "prestart:next": "npm run sync:assets",
+    "postinstall": "prisma generate",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "prisma:migrate": "prisma migrate deploy",
+    "prisma:seed": "node prisma/seed.mjs",
+    "db:bootstrap": "npm run prisma:generate && npm run prisma:push && npm run prisma:seed",
+    "db:migrate-files": "node scripts/migrate-file-data-to-db.mjs"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "bcryptjs": "^3.0.3",
+    "next": "15.5.14",
+    "prisma": "^5.22.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zod": "^4.3.6"
+  }
+}
